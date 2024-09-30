@@ -1,0 +1,56 @@
+<img class="logo" src="images/logo.png" alt="Blinktickets Logo" />
+
+<div class="content">
+  <div id="location">
+    <p class="label">Location</p>
+    <p class="content-text">Hayward, Oakland, +2 more....</p>
+  </div>
+
+  <mat-divider
+    [style]="{ 'border-right-color': '#00000014', margin: '0.15rem 4rem' }"
+    [vertical]="true"
+  ></mat-divider>
+
+  <div id="date-picker">
+    <p class="label">Date</p>
+    <input
+      class="content-text"
+      [style.opacity]="inputDate.value === '' ? 0.45 : 1"
+      matInput
+      [matDatepicker]="picker"
+      (click)="picker.open()"
+      placeholder="Select dates"
+      #inputDate
+    />
+    <mat-datepicker #picker>
+      <mat-datepicker-actions>
+        <button mat-button matDatepickerCancel>Cancel</button>
+        <button mat-raised-button matDatepickerApply>Apply</button>
+      </mat-datepicker-actions>
+    </mat-datepicker>
+  </div>
+
+  <mat-divider
+    [style]="{ 'border-right-color': '#00000014', margin: '0.15rem 4rem' }"
+    [vertical]="true"
+  ></mat-divider>
+
+  <div id="event-type">
+    <p class="label">Event Type</p>
+    <p class="content-text" style="opacity: 0.24; cursor: pointer;">
+      Select event types
+    </p>
+    <!-- <select id="event-select">
+      <option>Select event types</option>
+      Add other options here
+    </select> -->
+  </div>
+</div>
+
+<mat-icon
+  class="user-icon"
+  aria-hidden="false"
+  aria-label="User icon"
+  fontSet="material-icons-outlined"
+  >person
+</mat-icon>
