@@ -1,0 +1,23 @@
+<p-carousel
+  [value]="extendedData"
+  [page]="0"
+  [numVisible]="3"
+  [numScroll]="1"
+  [circular]="true"
+  [showIndicators]="false"
+  [showNavigators]="false"
+  [responsiveOptions]="undefined"
+  autoplayInterval="2000"
+  circular="true"
+  orientation="horizontal"
+>
+  <ng-template let-item pTemplate="item">
+    <div class="card">
+      <mat-card>
+        <mat-card-content>
+          <img [src]="item.img" [alt]="item.alt" />
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </ng-template>
+</p-carousel>
