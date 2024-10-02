@@ -1,0 +1,88 @@
+:host {
+  display: block;
+}
+
+.card {
+  margin: 0 1rem;
+  height: 100%;
+  width: 21rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: transparent;
+  box-shadow: -1.5px 3px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.card-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.5rem;
+
+  .title {
+    color: #000000de;
+    font-weight: 600;
+  }
+}
+
+.card-image-content {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 2rem;
+  font-weight: 500;
+  color: #00000099;
+}
+
+.details p {
+  align-content: center;
+}
+
+.chip-content {
+  height: 1.5rem;
+  font-size: small;
+}
+
+.price-card {
+  width: auto;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: none;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+}
+
+.price-card-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff9f9;
+  box-shadow: none;
+}
+
+.price-card-content p {
+  color: #000000de;
+  font-weight: 600;
+  font-size: medium;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #e00046;
+}

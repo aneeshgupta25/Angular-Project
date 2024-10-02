@@ -1,0 +1,38 @@
+<mat-card class="card">
+  <mat-card-content
+    [style]="{
+      padding: 0,
+    }"
+    class="card-content"
+  >
+    <img class="card-image-content" [src]="event().img" />
+    <div class="card-text-content">
+      <p class="title">{{ event().title }}</p>
+      <div class="details">
+        <img src="images/trending/calendar.svg" alt="Calendar icon" />
+        <p>{{ event().date + " | " + event().time + "Onwards" }}</p>
+      </div>
+      <div class="details">
+        <img src="images/trending/location.svg" alt="Location icon" />
+        <p>{{ event().location }}</p>
+      </div>
+      <mat-chip-set>
+        <mat-chip
+          [class]="{ 'chip-content': true }"
+          [style]="{
+            'background-color': labelColor,
+            'border-color': labelTextColor
+          }"
+          [color]="labelTextColor"
+          >{{ event().label }}</mat-chip
+        >
+      </mat-chip-set>
+    </div>
+    <mat-card class="price-card">
+      <mat-card-content style="padding: 0 0.5rem;" class="price-card-content">
+        <p>From {{ event().price }}</p>
+        <button mat-button>Buy Now</button>
+      </mat-card-content>
+    </mat-card>
+  </mat-card-content>
+</mat-card>
