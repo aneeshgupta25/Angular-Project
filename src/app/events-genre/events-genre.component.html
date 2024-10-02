@@ -1,0 +1,44 @@
+<h1>Browse events by genre</h1>
+
+<p-carousel
+  [value]="genres"
+  [page]="0"
+  [numVisible]="10"
+  [numScroll]="3"
+  [showIndicators]="false"
+  [showNavigators]="true"
+  [responsiveOptions]="undefined"
+  orientation="horizontal"
+>
+  <ng-template let-item pTemplate="item">
+    <div class="card-container">
+      <mat-card>
+        <mat-card-content>
+          <img [src]="item.img" [alt]="item.title" />
+        </mat-card-content>
+      </mat-card>
+      <div class="genre-text">
+        <h2 class="title">{{ item.title }}</h2>
+        <p class="number">{{ item.numberOfEvents }} events</p>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template pTemplate="previousicon">
+    <mat-icon
+      class="navigation-button"
+      aria-hidden="false"
+      aria-label="Left Navigation Icon"
+      fontSet="material-icons-outlined"
+      >arrow_circle_left
+    </mat-icon>
+  </ng-template>
+  <ng-template pTemplate="nexticon">
+    <mat-icon
+      class="navigation-button"
+      aria-hidden="false"
+      aria-label="Right Navigation Icon"
+      fontSet="material-icons-outlined"
+      >arrow_circle_right
+    </mat-icon>
+  </ng-template>
+</p-carousel>

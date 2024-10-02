@@ -13,28 +13,59 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.p-carousel-item-active:not(.p-carousel-item-start, .p-carousel-item-end) {
-  transform: scale(1.8);
-  height: 16.5rem;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-}
-
-.p-carousel-item-start {
-  opacity: 0.19;
-  transition: opacity 0.5s ease-out;
-}
-
-.p-carousel-item-end {
-}
-
-.p-carousel-items-content {
+app-carousel-cards
+  p-carousel
+  .p-carousel-horizontal
+  .p-carousel-content
+  .p-carousel-container
+  .p-carousel-items-content {
   padding: 2.1rem 0;
   margin-top: 2rem;
+
+  .p-carousel-items-container {
+    .p-carousel-item {
+      scale: 0.7;
+      height: 16rem;
+      opacity: 0.19;
+    }
+
+    .p-carousel-item-start {
+      opacity: 0.19;
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .p-carousel-item-end {
+    }
+
+    .p-carousel-item-active:not(.p-carousel-item-start, .p-carousel-item-end) {
+      transform: scale(1.8);
+      height: 16.5rem;
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+  }
 }
 
-.p-carousel-item {
-  scale: 0.7;
-  height: 16rem;
-  opacity: 0.19;
+app-events-genre p-carousel .p-carousel-horizontal {
+  .p-carousel-content .p-carousel-container {
+    padding: 0 1.5rem;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+
+    .p-carousel-items-content {
+      padding: 0.1rem 0;
+
+      .p-carousel-items-container {
+        .p-carousel-item {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,57 @@
+:host {
+  display: block;
+}
+
+h1 {
+  margin: 2rem 4rem 1rem 4rem;
+}
+
+.card-container {
+  height: auto;
+  width: 9rem;
+  cursor: pointer;
+}
+
+:host mat-card {
+  box-shadow: -1.5px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+:host mat-card,
+:host mat-card-content {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.genre-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.1rem;
+}
+
+.genre-text .title {
+  font-weight: 500;
+}
+
+.genre-text .number {
+  color: #0000007a;
+  font-size: medium;
+}
+
+.navigation-button {
+  width: 3rem;
+  display: flex;
+  height: 3rem;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+}
