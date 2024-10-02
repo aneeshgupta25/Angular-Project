@@ -6,11 +6,12 @@ import { EventsGenreComponent } from "./events-genre/events-genre.component";
 import { TrendingComponent } from "./trending/trending.component";
 import { SpotlightComponent } from "./spotlight/spotlight.component";
 import { MostPopularComponent } from "./most-popular/most-popular.component";
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [HeaderComponent, CarouselCardsComponent, EventsGenreComponent, TrendingComponent, SpotlightComponent, MostPopularComponent],
+  imports: [HeaderComponent, CarouselCardsComponent, EventsGenreComponent, TrendingComponent, SpotlightComponent, MostPopularComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
