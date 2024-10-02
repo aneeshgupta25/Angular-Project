@@ -1,0 +1,14 @@
+<app-section title="Most Popular">
+    <p-scroller
+    [items]="data()"
+    [itemSize]="150"
+    scrollWidth="100vw"
+    orientation="horizontal"
+    [columns]="data()"
+    [style]="{ height: '22rem' }"
+    >
+      <ng-template pTemplate="item" let-item>
+        <app-event-card [event]="item" />
+      </ng-template>
+    </p-scroller>
+  </app-section>

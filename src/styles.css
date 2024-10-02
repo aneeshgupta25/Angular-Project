@@ -74,7 +74,8 @@ app-events-genre p-carousel .p-carousel-horizontal {
   }
 }
 
-app-trending p-scroller .p-scroller {
+app-trending p-scroller .p-scroller,
+app-most-popular p-scroller .p-scroller {
   height: 100%;
   .p-scroller-content {
     display: flex;
