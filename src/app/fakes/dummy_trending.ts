@@ -43,7 +43,7 @@ export const DUMMY_TRENDING = [
         price: 57.79
     },
     {
-        id: 1,
+        id: 4,
         title: "Some more sample event",
         img: "images/trending/1.png",
         date: "Oct 1, Sat",
@@ -53,7 +53,7 @@ export const DUMMY_TRENDING = [
         price: 57.79
     },
     {
-        id: 1,
+        id: 5,
         title: "Another exciting sample event",
         img: "images/trending/3.png",
         date: "Oct 1, Sat",

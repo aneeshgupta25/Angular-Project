@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { ScrollerModule } from 'primeng/scroller';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -18,9 +18,9 @@ import { SectionComponent } from "../shared/section/section.component";
   providers: [TrendingComponentService]
 })
 export class TrendingComponent {
-  data: EventModel[] = [];
+  data = signal<EventModel[]>([]);
 
   constructor(private trendingComponentService: TrendingComponentService) {
-    this.data = this.trendingComponentService.getData();
+    this.data.set(this.trendingComponentService.getData());
   }
 }

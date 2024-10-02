@@ -9,4 +9,8 @@ import { Component, input } from '@angular/core';
 })
 export class SectionComponent {
   title = input.required<string>();
+
+  ngOnInit() {
+    console.log(this.title());
+  }
 }

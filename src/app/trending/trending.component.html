@@ -1,9 +1,10 @@
 <app-section title="Trending">
   <p-scroller
-  [items]="data"
+  [items]="data()"
   [itemSize]="150"
   scrollWidth="100vw"
   orientation="horizontal"
+  [columns]="data()"
   [style]="{ height: '22rem' }"
   >
     <ng-template pTemplate="item" let-item>
